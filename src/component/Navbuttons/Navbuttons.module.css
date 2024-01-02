@@ -1,0 +1,9 @@
+.navbuttons{
+    padding: 0.5rem 1rem;
+    color: var(--primary-color);
+    background-color: var(--primary-bg-color);
+    height: 3rem;
+    border: 0px;
+    justify-content: space-between;
+    margin: 1rem;
+}

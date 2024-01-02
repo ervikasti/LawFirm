@@ -1,0 +1,29 @@
+.img{
+    object-fit:cover;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.title{
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    right: 20%;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1rem;
+    letter-spacing: 0em;
+
+}
+
+.container{
+    position: relative;
+    border-radius: 5px;
+}
+
+.title_container{
+    text-align: center;
+}

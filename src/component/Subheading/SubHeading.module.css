@@ -1,0 +1,19 @@
+/* sub_heading_container{
+    display: flex;
+    margin: 1px;
+    padding: 2px;
+}
+
+.sub_heading{
+    width: inherit;
+    padding: 2px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+    position: relative;
+} */

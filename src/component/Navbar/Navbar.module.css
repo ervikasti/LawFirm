@@ -1,0 +1,19 @@
+.nav_container{
+    display: flex;
+    position: static;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+    align-items: center;
+    height: 10vh;
+
+}
+
+.nav_links{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+

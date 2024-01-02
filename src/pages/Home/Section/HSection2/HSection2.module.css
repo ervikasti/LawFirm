@@ -1,0 +1,26 @@
+.cards_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+ 
+}
+
+.headers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards_details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cards_details_header{
+    align-self: center;
+    margin: 5%;
+}
