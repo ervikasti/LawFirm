@@ -1,0 +1,11 @@
+.header{
+    display: flex;
+    align-self: center;
+    margin: 5%;
+    justify-content: center;
+}
+
+.styles.container{
+    display: flex;
+    flex-direction: column;
+}

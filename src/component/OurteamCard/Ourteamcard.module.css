@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    max-width: 320px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 14px;
+    padding: 5px;
+    color: var(--primary-color);
+}
+
+.container:hover {
+    background-color: #E3B748;
+}
+
+.img{
+    border-radius: 50%;
+    width: 68px;
+    object-fit: cover;
+    display: flex;
+    margin: 10px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.details > h3 {
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+
+.details > small {
+    color: rgb(145, 145, 145);
+}

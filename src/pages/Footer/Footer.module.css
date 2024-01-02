@@ -1,0 +1,12 @@
+.copyrightdetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+}
+
+.copyrightdetail > small {
+    margin: 5px;
+}

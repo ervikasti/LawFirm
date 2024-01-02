@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Navbuttons.module.css";
 
-export const Navbuttons = ({names}) =>{
+export const Navbuttons = ({data}) =>{
     return (
         <div>
-            {names.map( (name,i) => (<button key={i} className={styles.navbuttons} >{name}</button>))}
+            {data.map( (name,i) => (<button key={i} className={styles.navbuttons} >{name}</button>))}
         </div>
     )
 }

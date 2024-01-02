@@ -4,10 +4,6 @@
     align-items: center;
 }
 
-.container{
- 
-}
-
 .headers{
     display: flex;
     justify-content: space-between;
