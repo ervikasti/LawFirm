@@ -1,0 +1,11 @@
+.container .details{
+    display: flex;
+}
+
+.details_para {
+  width: 50%;
+}
+
+.details_accordian{
+    width: 50%;
+}

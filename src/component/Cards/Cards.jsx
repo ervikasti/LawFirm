@@ -8,8 +8,11 @@ import Typography from '@mui/material/Typography';
 
 
 export default function ImgMediaCard({data}) {
-    // console.log(data)
-    // const  [image,alt,title,para,btn] = data;
+    console.log(data)
+    const  {image,alt,title,para,btn,fromClients} = data;
+    const imgL = data.image;
+    const imgl = Object.values(imgL);
+
   return (
     <Card sx={{ maxWidth: 359,
       bgcolor: '#1D1D1D',
@@ -22,21 +25,31 @@ export default function ImgMediaCard({data}) {
         bgcolor: "#2E2E2E",
         color: "white"
       }}}>
-      <CardMedia
+       {fromClients?<CardMedia
+        component="img"
+        sx={{width:"105px",p:2,}}
+        alt={`${data.alt}`}
+        image={`${imgl}`}
+      />: <CardMedia
         component="img"
         sx={{width:"60px",p:2,}}
         alt={`${data.alt}`}
-        image={`${data.image.successCard}`}
-      />
+        image={`${imgl}`}
+      />} 
+      
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {data.title}
         </Typography>
+        {fromClients? <Typography gutterBottom variant="small" component="div">
+          {data.subtitle}
+        </Typography>:null}
         <Typography variant="body2" color="#ffffff">
           {data.para}
         </Typography>
       </CardContent>
       <CardActions>
+        {fromClients?null:
         <Button size="small" sx={{
           bgcolor: '#E3B748',
           color:'#000000',
@@ -53,7 +66,7 @@ export default function ImgMediaCard({data}) {
           },
           textTransform: 'none',
         }}
-        >{data.btn}</Button>
+        >{data.btn}</Button>}
       </CardActions>
     </Card>
   );
