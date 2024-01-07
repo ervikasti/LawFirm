@@ -30,18 +30,23 @@ export default function HSection6 () {
     },
     ]
 
-    // const [expanded, setExpanded] = React.useState("panel1");
+    const [expanded, setExpanded] = React.useState("panel1");
+
+    const handleChange = (panel) => (event, newExpanded) => {
+        setExpanded(newExpanded ? panel : false);
+      };
 
     return(
         <div className={styles.container}>
-            <div>
+            <div className={styles.header}>
                 <Customheader data={"FAQ"}></Customheader>
             </div>
             <div className={styles.details}>
-                <div className={styles.details_para}>para</div>
+                <div className={styles.details_para}>Amet minim mollit non deserunt ullamco est sit
+aliqua dolor do amet sint. </div>
                 <div className={styles.details_accordian}>
                     {faqList.map( (data)=>(
-                        <FaqAccordion key={data.id} data={data} ></FaqAccordion>
+                        <FaqAccordion key={data.id} data={data} expanded={expanded} onClick={handleChange} ></FaqAccordion>
                     ))}
                     
                 </div>

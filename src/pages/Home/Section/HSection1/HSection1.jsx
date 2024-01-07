@@ -12,7 +12,11 @@ export const Hsection1 =()=>{
                 <h3 className={styles.Hsection1_header1}>You don’t have to</h3>
                 <h3 className={styles.Hsection1_header2}>Fight them Alone.</h3>
                 <SubHeading>{section1text}</SubHeading>
-                <input type="email" placeholder="enter your email"></input>
+                <form className={styles.section1Form}>
+                <input className={styles.inputEmail}type="email" placeholder="📧 Enter your email address"></input>
+                <button className={styles.submitBtn}type="submit">Let's Talk</button>
+                </form>
+                
             </div>
             <div>
                 <img src={section1} alt="img" />

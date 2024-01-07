@@ -1,3 +1,5 @@
+
+
 .Hsection1{
     display: flex;
     width: 100%;
@@ -34,6 +36,31 @@
     font-weight: 600;
     line-height: 97px;
     letter-spacing: 0em;
+}
+
+.section1Form{
+    position: relative;
+}
+
+.inputEmail{
+    width: 438px;
+    background-color: gray;
+    color: #FFFFFF;
+    border-radius: 43px;
+    padding: 20px;
+    border: 0px;
+}
+
+.submitBtn{
+    position: absolute;
+    right: 0;
+    width: 137px;
+    background-color: #E3B748;
+    border-radius: 43px;
+    padding: 15px;
+    border: 0px;
+    margin: 5px 5px 5px 0px;
+
 }
 
 

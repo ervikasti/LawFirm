@@ -52,17 +52,15 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   backgroundColor: "#1D1D1D",
 }));
 
-export default function FaqAccordion({data}) {
-  const [expanded, setExpanded] = React.useState("panel1");
+export default function FaqAccordion({data, expanded, onClick}) {
+  // const [expanded, setExpanded] = React.useState("panel1");
 
-  const handleChange = (panel) => (event, newExpanded) => {
-    setExpanded(newExpanded ? panel : false);
-  };
+
 
   return (
       <Accordion
         expanded={expanded === `${data.id}`}
-        onChange={handleChange(`${data.id}`)}
+        onChange={onClick(`${data.id}`)}
       >
         <AccordionSummary aria-controls={`${data.id}d-content`} id={`${data.id}d-header`}>
           <Typography>{data.question}</Typography>
