@@ -10,14 +10,19 @@ import  HSection7  from "./Section/HSection7/HSection7";
 
 export const Home =()=>{
     return (
-        <div className={styles.home}>
-            <Hsection1></Hsection1>
-            <HSection2></HSection2>
-            <HSection3></HSection3>
-            <HSection4></HSection4>
-            <HSection5></HSection5>
-            <HSection6></HSection6>
-            <HSection7></HSection7>
+        <div >
+            <div className={styles.section1}>
+                <Hsection1></Hsection1>
+            </div>
+            <div className={styles.home}>
+                <HSection2></HSection2>
+                <HSection3></HSection3>
+                <HSection4></HSection4>
+                <HSection5></HSection5>
+                <HSection6></HSection6>
+                <HSection7></HSection7>
+            </div>
+            
         </div>
     )
 }
