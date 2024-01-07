@@ -19,6 +19,7 @@ export const HSection2 =()=>{
         <div className={styles.container}>
             <div className={styles.headers}>
                 <Customheader data={`Let’s Introduce Ourself`}/>
+                <div className={styles.headers_line}></div>
                 <div className={styles.cards_details_header}>
                     <h3>Criminal Lawyer</h3>
                     <SubHeading>Amet minim mollit non deserunt ullamco est

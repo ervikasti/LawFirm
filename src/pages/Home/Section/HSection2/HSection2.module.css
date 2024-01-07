@@ -19,4 +19,15 @@
 .cards_details_header{
     align-self: center;
     margin: 5%;
+    color: var(--primary-color);
+}
+
+.cards_details_header > h3 {
+    font-size: 32px;
+}
+
+.headers_line{
+    border-left: 1px solid white;
+    height: 184px;
+    margin: 0 5%;
 }
